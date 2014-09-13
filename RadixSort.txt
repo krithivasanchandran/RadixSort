@@ -3,12 +3,12 @@ public class radixsort {
 	
 	public static void main(String args[]){
 		
-	int a[] = {355,720,437,657,839};
-	int lsd[] = new int[5];
-	int mid[] = new int[5];
-	int msd[] = new int[5];
+	int a[] = {355,720,437,657,839,282,421,432,134,141,123,234};
+	int lsd[] = new int[a.length];
+	int mid[] = new int[a.length];
+	int msd[] = new int[a.length];
 	
-	for(int i=0;i<5;i++){
+	for(int i=0;i<a.length;i++){
 		int splitup = a[i];
 		lsd[i] = splitup%10;
 		int temp = splitup/10;
@@ -76,7 +76,7 @@ public class radixsort {
 	
 	
 	for(int i=0;i<lsd.length;i++){
-		 System.out.println("The value is " + msd[i] + mid[i] + lsd[i]);		
+		 System.out.println("The Sorted array is  " + msd[i] + mid[i] + lsd[i]);		
 	}
  	}
 
